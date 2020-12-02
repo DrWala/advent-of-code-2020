@@ -22,7 +22,6 @@ def count_valid_passwords_two(passwords):
         password_policy_character = password_policy[-1]
 
         password_text = password.split(":")[1][1:]
-        # print(password_text[password_policy_idx_1])
         
         # Python does not have XOR, so != functions like an XOR
         if (password_text[password_policy_idx_1] == password_policy_character) != (password_text[password_policy_idx_2] == password_policy_character):
