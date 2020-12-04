@@ -8,7 +8,7 @@ def count_valid_passwords_one(passwords):
         password_policy_repeat_max = int(password_policy.split(" ")[0].split("-")[1])
         password_text = password.split(":")[1][1:]
         
-        freq = Counter(password_text) #O(S)
+        freq = Counter(password_text)  #O(S)
         if freq[password_policy[-1]] >= password_policy_repeat_min and freq[password_policy[-1]] <= password_policy_repeat_max:
             count += 1
     return count
