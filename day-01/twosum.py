@@ -10,7 +10,7 @@ def two_sum(numbers, target):
     number_1 = "x"
     number_2 = "x"
     for number in number_list:
-        if number_set.__contains__(target - number):
+        if target - number in number_set:
             number_1 = number
             number_2 = target - number
     
